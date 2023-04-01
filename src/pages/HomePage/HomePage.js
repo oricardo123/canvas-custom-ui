@@ -1,11 +1,16 @@
 import HomeTopGallery from "../../components/HomeTopGallery";
-import "./Homepage.css";
 import HomeContainer2 from "../../components/HomeContainer2";
+import "./Homepage.css";
 const HomePage = () => {
   return (
     <>
+    <div> 
     <HomeTopGallery/>
-    <HomeContainer2/>
+    
+    </div>
+    <div>
+      <HomeContainer2/>
+    </div>
     </>
   );
 };

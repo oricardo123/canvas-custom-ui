@@ -2,7 +2,7 @@ import React from "react";
 
 export default function HomeTopGallery() {
   return (
-    <div class="container">
+    <div class="container relative">
       <div class="left-vector"></div>
       <div class="right-vector"></div>
       <div class="left-vector-heading">
