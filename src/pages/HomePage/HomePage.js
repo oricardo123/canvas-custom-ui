@@ -1,13 +1,12 @@
-
+import vector from "./Vector/vector";
 const HomePage = () => {
-  
-    return(
-        <div className="vector1 grid grid-cols-1">
+  return (
+    <div className="vector1 grid grid-cols-1">
+      <vector />
+    </div>
+  );
 
-        </div>
-    )
-  
-    /*return (
+  /*return (
     <div className="vector1 grid grid-cols-1">
       <img
         src="../images/vector1.svg"

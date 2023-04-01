@@ -1,8 +1,11 @@
-import '../../../../public/images/newvector.css'
+import "./newvector.css";
 const vector = () => {
   return (
-    <div >vector</div>
-  )
-}
+    <div>
+      <div className="vector1" />
+      <div className="vector2" />
+    </div>
+  );
+};
 
-export default vector
+export default vector;
