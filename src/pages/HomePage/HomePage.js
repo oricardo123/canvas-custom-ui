@@ -1,10 +1,6 @@
+import HomeTopGallery from "../../components/HomeTopGallery";
 import "./Homepage.css";
 const HomePage = () => {
-  return (
-    <div class="container">
-      <div class="left"></div>
-      <div class="right"></div>
-    </div>
-  );
+  return <HomeTopGallery />;
 };
 export default HomePage;
