@@ -2,7 +2,7 @@
   position: relative;
 }
 
-.left {
+.vector1 {
   position: absolute;
   width: 897px;
   height: 723px;
@@ -13,7 +13,7 @@
   transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
-.right {
+.vector2 {
   position: absolute;
   width: 888px;
   height: 771px;
