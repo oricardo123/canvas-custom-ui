@@ -2,30 +2,27 @@ import img from "../images/canvas-image-11.png";
 
 const HomeContainer2 = () => {
   return (
-    <div>
-      <div className="flex relative container mt-[100px] mx-auto">
-        <img
-          src={img}
-          alt="hotel room with furniture"
-          className="w-[692px] h-[507px] rounded-2xl"
-        />
-        <div className="absolute bottom-[80px] right-[350px] bg-HomeContainer2TextBox h-[322px] w-[623px] backdrop-blur-sm p-6 rounded-2xl">
-          <h2 className="text-3xl font-semibold mb-4">
-            Personalised Pieces for Your Unique Space.
-          </h2>
-          <p>
-            All our chairs, tables, and contract furniture are hand-made to
-            order with acute attention to specifications, so each piece is
-            tailored to our customer's exact requirements. Our manufacturing
-            background allows for excellent customisation and flexibility, and
-            we also have an extensive 'on-file' product selection to suit even
-            the most original projects.
-          </p>
-        </div>
+    <div className="flex p-6 ml-[8.75rem] mt-[8.75rem] mb-[10.625rem] w-full">
+      <img
+        src={img}
+        alt="hotel room with furniture"
+        className="w-[43.25rem] h-[31.6875rem] rounded-2xl"
+      />
+      <div className="h-[20.125rem] w-[38.94rem] ml-[-7.5rem] mt-[5.8125rem] px-[2rem] py-[1rem] bg-HomeContainer2TextBox  backdrop-blur-sm rounded-2xl ">
+        <h2 className="text-3xl font-semibold mb-4">
+          Personalised Pieces for Your Unique Space.
+        </h2>
+        <p className="w-[34.375rem]">
+          All our chairs, tables, and contract furniture are hand-made to order
+          with acute attention to specifications, so each piece is tailored to
+          our customer's exact requirements. Our manufacturing background allows
+          for excellent customisation and flexibility, and we also have an
+          extensive 'on-file' product selection to suit even the most original
+          projects.
+        </p>
       </div>
     </div>
   );
 };
 
 export default HomeContainer2;
-
