@@ -106,3 +106,7 @@
   border-radius: 5px;
 }
 
+.HomeContainer3bg{
+  background: linear-gradient(318.74deg, #572D16 30.67%, #A95A2C 95.58%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
