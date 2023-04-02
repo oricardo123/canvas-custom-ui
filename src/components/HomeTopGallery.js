@@ -17,8 +17,8 @@ export default function HomeTopGallery() {
           <div className="learn-more">Learn More</div>
         </div>
       </div>
-      <img class="image-1" src={img1} />
-      <img class="image-2" src={img2} />
+      <img class="image-1" alt="furniture" src={img1} />
+      <img class="image-2" alt="furniture" src={img2} />
     </div>
   );
 }
