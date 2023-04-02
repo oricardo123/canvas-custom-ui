@@ -1,8 +1,8 @@
-import img from '../canvas-images/canvas-image-11.png';
+import img from "../images/canvas-image-11.png";
 
 const HomeContainer2 = () => {
   return (
-    <div className=" mt-20">
+    <div className="container mt-20 mx-auto home-container-2">
       <img
         src={img}
         alt="hotel room with furniture"

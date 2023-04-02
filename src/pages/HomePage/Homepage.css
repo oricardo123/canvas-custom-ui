@@ -1,11 +1,17 @@
+.home-page {
+  display: flex;
+  flex-direction: column;
+}
+
 .container {
   position: relative;
   width: 100vw;
   z-index: 0;
+  margin-bottom: 100px;
 }
 
 .left-vector {
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 723px;
   left: 0px;
@@ -46,4 +52,56 @@
 
   color: #ffffff;
   z-index: 4;
+}
+
+.image-1 {
+  position: absolute;
+  width: 385.44px;
+  height: 379.4px;
+  left: 914.04px;
+  top: 181px;
+  border-radius: 25px;
+  z-index: 5;
+}
+
+.image-2 {
+  position: absolute;
+  width: 337.37px;
+  height: 238.53px;
+  left: 806px;
+  top: 534px;
+  border-radius: 28px;
+  z-index: 6;
+}
+
+.left-vector-links {
+  margin-left: 8.75rem;
+  z-index: 4;
+}
+
+.connect-with-us {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 200px;
+  height: 43px;
+  left: 140px;
+  top: 564px;
+
+  background: #ffffff;
+  border: 3px solid #ffffff;
+  border-radius: 5px;
+}
+
+.learn-more {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 148px;
+  height: 43px;
+  left: 380px;
+  top: 564px;
+
+  border: 3px solid #ffffff;
+  border-radius: 5px;
 }
