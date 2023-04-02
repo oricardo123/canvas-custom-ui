@@ -1,4 +1,4 @@
-import img from '../canvas-images/canvas-image-11.png';
+import img from '../images/canvas-image-11.png';
 
 const HomeContainer2 = () => {
   return (
