@@ -3,15 +3,10 @@ import HomeContainer2 from "../../components/HomeContainer2";
 import "./Homepage.css";
 const HomePage = () => {
   return (
-    <>
-    <div> 
-    <HomeTopGallery/>
-    
+    <div className="home-page">
+      <HomeTopGallery />
+      <HomeContainer2 />
     </div>
-    <div>
-      <HomeContainer2/>
-    </div>
-    </>
   );
 };
 export default HomePage;
