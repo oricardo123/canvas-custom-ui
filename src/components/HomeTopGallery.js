@@ -1,12 +1,11 @@
-import React from "react";
 import img1 from "../images/canvas-image-3.png";
 import img2 from "../images/canvas-image-2.png";
 
 export default function HomeTopGallery() {
   return (
-    <div className="container top-gallery">
-      <div className="left-vector"></div>
-      <div className="right-vector"></div>
+    <div className="flex mt-20">
+      <div className="left-vector w-full h-[45rem] "></div>
+      <div className="right-vector  w-full h-[49rem] ml-[-50rem] hidden md:block"></div>
       <div className="left-vector-content">
         <div className="left-vector-heading">
           Transform your space with our custom furniture solutions at Canvas
