@@ -2,7 +2,7 @@ import img from "../images/canvas-image-11.png";
 
 const HomeContainer2 = () => {
   return (
-    <div className="flex justify-center p-6  mt-[8.75rem] mb-[10.625rem] w-full ">
+    <div className="flex p-6  mt-[8.75rem] mb-[10.625rem] w-full ">
       <img
         src={img}
         alt="hotel room with furniture"

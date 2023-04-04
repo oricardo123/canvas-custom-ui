@@ -5,7 +5,7 @@ export default function HomeTopGallery() {
   return (
     <div className="flex mt-20">
       <div className="left-vector w-full h-[45rem] "></div>
-      <div className="right-vector  w-full h-[49rem] ml-[-50rem] hidden md:block"></div>
+      <div className="right-vector  w-full h-[49rem] ml-[-26rem] hidden md:block"></div>
       <div className="left-vector-content">
         <div className="left-vector-heading">
           Transform your space with our custom furniture solutions at Canvas
