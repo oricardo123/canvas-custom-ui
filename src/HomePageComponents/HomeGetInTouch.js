@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Button1 from "./common/Button";
+import Button1 from "./button/Button";
 
 const GetInTouchContainer = styled.div`
   display: flex;
@@ -25,7 +25,7 @@ const GetInTouchConnectWithUsButton = styled.div``;
 
 export default function HomeGetInTouch() {
   return (
-    <GetInTouchContainer className="flex-1 justify-center">
+    <GetInTouchContainer className="flex-1 justify-center mb-[5rem]">
       <GetInTouchHeading>
         Get in touch with us to start your custom furniture project today.
       </GetInTouchHeading>

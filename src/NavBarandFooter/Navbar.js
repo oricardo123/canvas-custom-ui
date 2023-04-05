@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-
+import img from '../images/canvas-logo-brown.jpg';
 const navigation = [
   { name: "Home", href: "#" },
   { name: "About", href: "#" },
@@ -23,7 +23,7 @@ export default function Navbar() {
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
-              <img className="h-8 w-auto" src="" alt="canvas custom" />
+              <img className="h-8 w-auto" src={img} alt="canvas custom" />
             </a>
           </div>
           <div className="flex lg:hidden">
@@ -59,7 +59,7 @@ export default function Navbar() {
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only"></span>
-                <img className="h-8 w-auto" src="" alt="" />
+                <img className="h-8 w-auto" src={img} alt="" />
               </a>
               <button
                 type="button"

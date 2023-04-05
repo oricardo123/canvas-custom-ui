@@ -6,6 +6,7 @@ module.exports = {
     extend: {
       backgroundColor:{
         HomeContainer2TextBox:'rgba(189, 189, 189, 0.3)',
+        FooterColor:'background: rgba(115, 62, 29, 1)',
       },
     },
   },
