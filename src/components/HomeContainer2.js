@@ -2,13 +2,13 @@ import img from "../images/canvas-image-11.png";
 
 const HomeContainer2 = () => {
   return (
-    <div className="flex p-6 ml-[8.75rem] mt-[8.75rem] mb-[10.625rem] w-full">
+    <div className="flex justify-center p-6  mt-[8.75rem] mb-[10.625rem] w-full ">
       <img
         src={img}
         alt="hotel room with furniture"
-        className="w-[43.25rem] h-[31.6875rem] rounded-2xl scale-x-[-1]"
+        className="max-w-[43.25rem] h-[31.6875rem] rounded-2xl scale-x-[-1]"
       />
-      <div className="h-[20.125rem] w-[38.94rem] ml-[-7.5rem] mt-[5.8125rem] px-[2rem] py-[1rem] bg-HomeContainer2TextBox  backdrop-blur-sm rounded-2xl ">
+      <div className="flex flex-col h-[20.125rem] w-[38.94rem] ml-[-7.5rem] mt-[5.8125rem] px-[2rem] py-[1rem] bg-HomeContainer2TextBox  backdrop-blur-sm rounded-2xl ">
         <h2 className="text-3xl font-semibold mb-4">
           Personalised Pieces for Your Unique Space.
         </h2>
