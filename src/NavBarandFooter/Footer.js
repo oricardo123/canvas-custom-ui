@@ -1,18 +1,19 @@
+import VerticalLine from "./css/VerticalLine";
 import "./css/footer.css";
 import img from "../images/canvas-logo-brown.jpg";
 const Footer = () => {
   return (
-    <footer className="footer-bg text-white px-4 py-6">
+    <footer className="footer-bg text-white p-8">
       <div className="flex justify-evenly">
-        <div className="flex items-center">
+        <div className="basis-3/12">
           <img
             className="w-[20rem] h-[9rem]"
             src={img} // Replace with your logo URL
             alt="Logo"
           />
         </div>
-        <div className="hidden md:block border-r-2 border-white h-full"></div>
-        <div className="flex-col md:text-center">
+        <VerticalLine />
+        <div className="flex basis-6/12">
           <div className="flex-row">
             <h3 className="font-bold mb-4">CONTACT INFO</h3>
             <p>Business Email: sales@canvascontract.com</p>
@@ -27,9 +28,8 @@ const Footer = () => {
             <p>SW1V 3NP</p>
           </div>
         </div>
-        
-        <div className="hidden md:block border-r-2 border-white h-full"></div>
-        <div className="md:text-right">
+        <VerticalLine />
+        <div className="flex-col basis-2/12">
           <h3 className="font-bold mb-4">PAGES</h3>
           <p>Home</p>
           <p>Contact</p>
