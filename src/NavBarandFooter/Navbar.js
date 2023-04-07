@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import img from '../images/canvas-logo-brown.jpg';
+import img from "../images/canvas-logo-brown.jpg";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const navigation = [
-    { name: "Home", href: "/" },
+    { name: "Home", href: "/home" },
     { name: "About", href: "/about" },
     { name: "Catalog", href: "/catalog" },
     { name: "Portfolio", href: "/portfolio" },
@@ -17,7 +17,10 @@ const Navbar = () => {
   return (
     <div className="bg-white">
       <header className="absolute inset-x-0 top-0 z-50">
-        <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+        <nav
+          className="flex items-center justify-between p-6 lg:px-8"
+          aria-label="Global"
+        >
           <div className="flex lg:flex-1">
             <Link to="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
@@ -46,7 +49,12 @@ const Navbar = () => {
             ))}
           </div>
         </nav>
-        <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
+        <Dialog
+          as="div"
+          className="lg:hidden"
+          open={mobileMenuOpen}
+          onClose={setMobileMenuOpen}
+        >
           <div className="fixed inset-0 z-50" />
           <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
@@ -66,24 +74,26 @@ const Navbar = () => {
             <div className="mt-6 flow-root">
               <div className="-my-6 divide-y divide-gray-500/10">
                 <div className="space-y-6">
-                   {navigation.map((item) => (
-                <Link
-                  key={item.name}
-                  to={item.href}
-                  className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50 transition ease-in-out duration-150"
-                  onClick={() => setMobileMenuOpen(false)}
-                >
-                  <span className="text-sm font-medium text-gray-900">{item.name}</span>
-                </Link>
-              ))}
+                  {navigation.map((item) => (
+                    <Link
+                      key={item.name}
+                      to={item.href}
+                      className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50 transition ease-in-out duration-150"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      <span className="text-sm font-medium text-gray-900">
+                        {item.name}
+                      </span>
+                    </Link>
+                  ))}
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-      </Dialog.Panel>
-    </Dialog>
-  </header>
-</div>
-);
+          </Dialog.Panel>
+        </Dialog>
+      </header>
+    </div>
+  );
 };
 
 export default Navbar;

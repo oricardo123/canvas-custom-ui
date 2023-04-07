@@ -6,11 +6,11 @@ import GetInTouchHeading from "../HomePageComponents/HomeGetInTouch";
 import "./Pagescss/Homepage.css";
 const HomePage = () => {
   return (
-    <div className="home-page">
+    <div>
       <HomeTopGallery />
       <HomeContainer2 />
       <HomeContainer3 />
-      <TailoredToPerfection/>
+      <TailoredToPerfection />
       <GetInTouchHeading />
     </div>
   );

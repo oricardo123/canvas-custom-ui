@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="basis-3/12">
           <img
             className="w-[20rem] h-[9rem]"
-            src={img} // Replace with your logo URL
+            src={img} 
             alt="Logo"
           />
         </div>
