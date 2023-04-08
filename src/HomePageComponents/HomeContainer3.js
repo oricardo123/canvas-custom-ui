@@ -4,35 +4,35 @@ import img3 from "../images/canvas-image-14.jpg";
 
 const HomeContainer3 = () => {
   return (
-    <div className="flex justify-center h-[34.9375rem] w-full HomeContainer3bg">
-      <div className="flex-row basis-5/12 items-center mr-[3rem]">
-        <h1 className="text-white font-bold mt-[13rem]">Why Choose Us?</h1>
+    <div className="flex flex-col lg:flex-row justify-center h-auto lg:h-[34.9375rem] w-full HomeContainer3bg ">
+      <div className="flex-row lg:basis-6/12 items-center lg:mr-[3rem] p-8 ">
+        <h1 className="text-white font-bold lg:mt-[13rem]">Why Choose Us?</h1>
         <p className="text-white mb-[13rem] mt-[1.25rem]">
           We never lose sight of our clients' requirements and expectations,
           ensuring complete satisfaction. We are committed to promoting designs
           that are:
         </p>
       </div>
-      <div className="flex ">
-        <div className="flex flex-col justify-evenly basis-2/12">
+      <div className="flex flex-col lg:flex-row lg:basis-1/2">
+        <div className="flex lg:flex-col justify-evenly">
           <img
             alt="inspecting top of table"
             src={img1}
-            className="rounded-full h-[7rem] w-[7rem]"
+            className="rounded-full h-auto w-auto "
           />
           <img
             alt="measuring"
             src={img2}
-            className="rounded-full h-[7rem] w-[7rem] "
+            className="rounded-full h-auto w-auto "
           />
           <img
             alt="stitching onto furniture"
             src={img3}
-            className="rounded-full h-[7rem] w-[7rem]"
+            className="rounded-full h-auto w-auto"
           />
         </div>
-        <div className="flex flex-col justify-evenly">
-          <div className="">
+        <div className="flex flex-col justify-evenly p-2 lg:mr-[11.5rem]">
+          <div >
             <h1 className="text-white font-bold">Distinctive</h1>
             <p className="text-white">
               We strive to create pieces that are visually stunning and will add
