@@ -11,6 +11,7 @@ import ContactPage from "./pages/ContactPage.js";
 import CatalogPage from "./pages/Catalog/CatalogPage.js";
 import PortfolioPage from "./pages/PortfolioPage.js";
 import AboutPage from "./pages/AboutPage.js";
+
 function App() {
   return (
     <Router>

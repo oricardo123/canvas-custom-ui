@@ -6,7 +6,7 @@ const HomeContainer2 = () => {
       <img
         src={img}
         alt="hotel room with furniture"
-        className="max-w-[43.25rem] h-[31.6875rem] rounded-2xl scale-x-[-1]"
+        className="w-[43.25rem] h-[31.6875rem] rounded-2xl scale-x-[-1]"
       />
       <div className="flex flex-col justify-center h-[20.125rem] w-[38.94rem] ml-[-7.5rem] mt-[5.8125rem] px-[2rem] py-[1rem] bg-HomeContainer2TextBox  backdrop-blur-sm rounded-2xl ">
         <h2 className="text-3xl font-semibold">
