@@ -12,6 +12,9 @@ module.exports = {
         screen: 'screen',
         'color-burn': 'color-burn',
       },
+      screens: {
+        'xs': '300px',
+      },
     },
   },
   variants: {
@@ -22,6 +25,3 @@ module.exports = {
   plugins: [require('flowbite/plugin')],
   content: ['./node_modules/flowbite/**/*.js'],
 };
-
-
-
