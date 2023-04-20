@@ -5,9 +5,9 @@ const TailoredToPerfection = () => {
   return (
     <>
       <div className="flex justify-center mt-[10rem]">
-        <div className=" items-center bg-HomeContainer2TextBox backdrop-blur-sm rounded-2xl p-10 ml-[9rem] mr-[-9rem] my-12 max-w-[632px]">
-          <h2 className="text-3xl font-semibold">Tailored to Perfection</h2>
-          <p>
+        <div className=" items-center bg-HomeContainer2TextBox backdrop-blur-lg rounded-2xl p-10 ml-[9rem] mr-[-9rem] my-12 max-w-[632px]">
+          <h2 className="text-3xl font-semibold mt-6">Tailored to Perfection</h2>
+          <p className="mt-3">
             Whether you need a customized project or mass-produced pieces,
             Canvas Contract Furniture has the understanding and expertise
             required to deliver the ideal solution. Browse our collection today

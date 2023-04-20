@@ -1,7 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import img1 from "../images/canvas-image-3.png";
 import img2 from "../images/canvas-image-2.png";
-import "./HomeTopGallery.css";
 
 export default function HomeTopGallery() {
   const navigate = useNavigate();
@@ -25,7 +24,7 @@ export default function HomeTopGallery() {
 
         <button
           onClick={() => handleCatalogClick()}
-          className="absolute text-black bg-white z-50 top-[28.57%] mt-40 ml-[9rem] p-2 transparent-text-button rounded-md text-lg font-bold"
+          className="absolute text-black bg-white z-50 top-[28.57%] mt-40 ml-[9rem] p-2 mix-blend-screen rounded-md text-lg font-bold"
         >
           View Catalog
         </button>
@@ -35,8 +34,16 @@ export default function HomeTopGallery() {
         >
           Learn More
         </button>
-        <img src={img2} className="absolute right-[5%] bottom-[48%] w-auto rounded-2xl" />
-        <img src={img1} className="absolute z-10 right-[15%] bottom-[15%] w-auto rounded-2xl" />
+        <img
+          src={img2}
+          alt=""
+          className="absolute right-[5%] bottom-[48%] w-auto rounded-2xl"
+        />
+        <img
+          src={img1}
+          alt=""
+          className="absolute z-10 right-[15%] bottom-[15%] w-auto rounded-2xl"
+        />
       </div>
     </>
   );
