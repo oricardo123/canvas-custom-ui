@@ -25,7 +25,7 @@ const GetInTouchConnectWithUsButton = styled.div``;
 
 export default function HomeGetInTouch() {
   return (
-    <GetInTouchContainer className="flex-1 justify-center mb-[5rem]">
+    <GetInTouchContainer className="flex justify-center mb-[5rem]">
       <GetInTouchHeading>
         Get in touch with us to start your custom furniture project today.
       </GetInTouchHeading>

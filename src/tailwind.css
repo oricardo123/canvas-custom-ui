@@ -3,6 +3,5 @@
 @import 'tailwindcss/utilities';
 
 .hr{ 
-  height: 5px; 
   background: linear-gradient(269.97deg, #572D16 23.76%, #A95A2C 87.18%);
 }
