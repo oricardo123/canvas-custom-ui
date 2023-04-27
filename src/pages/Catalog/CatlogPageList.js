@@ -1,4 +1,3 @@
-import React from 'react'
 
 const CatlogPageList = () => {
   return (
@@ -6,4 +5,4 @@ const CatlogPageList = () => {
   )
 }
 
-export default CatlogPageList
+export default CatlogPageList;

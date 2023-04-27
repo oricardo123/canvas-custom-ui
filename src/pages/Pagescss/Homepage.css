@@ -10,65 +10,6 @@
   clip-path: polygon(28% 0%, 100% 0%, 100% 100%, 0% 99%);
 }
 
-.left-vector-content {
-  position: absolute;
-  left: 140px;
-  top: 347px;
-  z-index: 5;
-}
-
-.left-vector-heading {
-  width: 658px;
-  height: 183px;
-
-  font-style: normal;
-  font-weight: 700;
-  font-size: 45px;
-  display: flex;
-  color: #ffffff;
-}
-
-.left-vector-links {
-  display: flex;
-  margin-top: 34px;
-}
-
-.connect-with-us {
-  text-align: center;
-  box-sizing: border-box;
-  width: 200px;
-  line-height: 43px;
-  background: #ffffff;
-  border: 3px solid #ffffff;
-  border-radius: 5px;
-  font-family: "Nunito Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 27px;
-
-  color: #ffffff;
-
-  mix-blend-mode: normal;
-}
-
-.learn-more {
-  text-align: center;
-  margin-left: 2.5rem;
-  box-sizing: border-box;
-  width: 148px;
-  line-height: 43px;
-  border: 3px solid #ffffff;
-  border-radius: 5px;
-  font-family: "Nunito Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 27px;
-
-  color: #ffffff;
-}
-
 .HomeContainer3bg {
   background: linear-gradient(318.74deg, #572d16 30.67%, #a95a2c 95.58%);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
