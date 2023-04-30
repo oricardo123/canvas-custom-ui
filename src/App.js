@@ -4,13 +4,17 @@ import {
   Route,
   Routes,
   Navigate,
+  useParams
 } from "react-router-dom";
 import HomePage from "./pages/HomePage.js";
 import Footer from "./NavBarandFooter/Footer.js";
 import ContactPage from "./pages/ContactPage.js";
 import CatalogsPage from "./pages/CatalogsPage.js";
 import CatalogContainer from "./components/Catalog/CatalogContainer.js";
+import ProductView from "./components/Product/ProductView"
+
 import PortfolioPage from "./pages/PortfolioPage.js";
+
 import AboutPage from "./pages/AboutPage.js";
 import { Provider } from "react-redux";
 import {store} from "./store/store.js";
@@ -32,11 +36,17 @@ function App() {
                 <Route exact path="/catalog" element={<CatalogsPage />} />
                 <Route
                   exact
-                  path="/catalog/:id"
-                  element={<CatalogContainer />}
+                  path="/catalog/:catalogName/:productName"
+                  element={<CatalogContainer isProduct={true}/>}
+                />  
+                <Route
+                  exact
+                  path="/catalog/:catalogName"
+                  element={<CatalogContainer isProduct={false}/>}
                 />
                 <Route path="/portfolio" element={<PortfolioPage />} />
                 <Route path="/contact" element={<ContactPage />} />
+                
               </Routes>
             </div>
             <Footer />

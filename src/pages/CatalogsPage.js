@@ -23,31 +23,29 @@ const CatalogsPage = () => {
   };
 
   const dispatch = useDispatch();
+  
   useEffect(() => {
     fetchCatalogs();
-  }, []);
+  }, []);   
 
   return (
     <div className="mt-20">
-      <div className="flex-col basis-2/12">
-        <ul>
-          <h1>Products</h1>
-          <hr />
+      <div className="">
+          <div className="grid grid-rows-4 grid-flow-col gap-4">
           {catalogs?.map((item, index) => {
             return (
-              <>
-                <li className="mt-2" key={item.name}>
                   <Link
-                    to={`/catalogs/${item.name.toLowerCase()}`}
-                    state={{ catalogName: item.name }}
+                    to={`/catalog/${item.name.toLowerCase()}`}
+                    state={{ item }}
                   >
+                    <img src={item.image.url}/>
                     {item.name}
                   </Link>
-                </li>
-              </>
+              
             );
           })}
-        </ul>
+  
+        </div>
         <div className="grid grid-cols-4 mr-[9rem]"></div>
       </div>
     </div>
