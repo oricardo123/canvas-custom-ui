@@ -1,10 +1,19 @@
 import { gql } from "@apollo/client";
 
-export const GET_COLLECTIONS = gql`
-  query getCollections {
-    collections {
+export const GET_CATALOGS = gql`
+  query getCatalogs {
+    catalogs {
       name
-      products
+      id
+      products {
+        id
+        name
+        image {
+          id
+          url
+          fileName
+        }
+      }
     }
   }
 `;

@@ -13,7 +13,7 @@ import CatalogContainer from "./components/Catalog/CatalogContainer.js";
 import PortfolioPage from "./pages/PortfolioPage.js";
 import AboutPage from "./pages/AboutPage.js";
 import { Provider } from "react-redux";
-import store from "./store";
+import {store} from "./store/store.js";
 import { ApolloProvider } from "@apollo/client";
 import client from "./graphql/client";
 
@@ -29,10 +29,10 @@ function App() {
                 <Route path="/" element={<Navigate to="/home" />} />
                 <Route path="/home" element={<HomePage />} />
                 <Route path="/about" element={<AboutPage />} />
-                <Route exact path="/catalogs" element={<CatalogsPage />} />
+                <Route exact path="/catalog" element={<CatalogsPage />} />
                 <Route
                   exact
-                  path="/catalogs/:id"
+                  path="/catalog/:id"
                   element={<CatalogContainer />}
                 />
                 <Route path="/portfolio" element={<PortfolioPage />} />
