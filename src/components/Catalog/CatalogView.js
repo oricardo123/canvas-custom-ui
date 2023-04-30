@@ -13,18 +13,12 @@ import { stringify } from "postcss";
 
 
 export default function CatalogView(props) {
-  console.log('view', props)
- // const {selectedProduct, setSelectedProduct } = useState({})
   const { isProduct, catalog: {name, products} } = props;
-
-
   const { catalogName, productName } = useParams();
-
   const selectedProduct = useSelector((state) => {
     return state.catalogsReducer.catalogs.find((catalog)=>catalogName.toLowerCase() === catalog.name.toLowerCase()).products.find((product)=>product.name === productName);
   });
 
-  console.log('selectedProduct', selectedProduct)
 
   return (
     <>
