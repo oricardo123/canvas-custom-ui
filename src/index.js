@@ -4,6 +4,7 @@ import App from "./App";
 import { StrictMode } from "react";
 import "./tailwind.css";
 import "./index.css";
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <StrictMode>

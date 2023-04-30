@@ -60,7 +60,6 @@ const HomeContainer3 = () => {
       </div>
     </div>
   );
-
 };
 
 export default HomeContainer3;
