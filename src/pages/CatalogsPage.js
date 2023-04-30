@@ -1,26 +1,30 @@
 import React, { useEffect, useState } from "react";
-import { useCollections } from "../hooks/useCollections";
+import { useCatalogs } from "../hooks/useCatalogs";
 import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import {
+  addCatalogs
+} from "../store/catalogsReducer";
+
 
 const CatalogsPage = () => {
-  const [collections, setCollectons] = useState([]);
-  const {
-    getCollections,
-    dataCollections,
-    errorCollections,
-    loadingCollections,
-  } = useCollections();
+  const [catalogs, setCatalogs] = useState([]);
+  const { getCatalogs, dataCatalogs, errorCatalogs, loadingCatalogs } =
+    useCatalogs();
 
-  const fetchCollections = async () => {
-    const { data } = await getCollections();
+  const fetchCatalogs = async () => {
+    const { data } = await getCatalogs();
 
     if (data) {
-      setCollectons(data.collections);
+      console.log('data', data)
+      setCatalogs(data.catalogs);
+      dispatch(addCatalogs(data.catalogs))
     }
   };
 
+  const dispatch = useDispatch();
   useEffect(() => {
-    fetchCollections();
+    fetchCatalogs();
   }, []);
 
   return (
@@ -29,7 +33,7 @@ const CatalogsPage = () => {
         <ul>
           <h1>Products</h1>
           <hr />
-          {collections?.map((item, index) => {
+          {catalogs?.map((item, index) => {
             return (
               <>
                 <li className="mt-2" key={item.name}>
