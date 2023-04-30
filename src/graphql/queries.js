@@ -5,9 +5,13 @@ export const GET_CATALOGS = gql`
     catalogs {
       name
       id
+      image {
+        url
+      }
       products {
         id
         name
+        description
         image {
           id
           url
